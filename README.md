@@ -1,7 +1,5 @@
 # Applied Metalworks V1.0.0
 
-![Applied Metalworks logo]
-
 AE2 processing automation for Productive Metalworks on Minecraft 1.21.1 NeoForge.
 
 - **ME Foundry Interface:** connects AE2 Pattern Providers to a formed foundry, with nine cast slots.
