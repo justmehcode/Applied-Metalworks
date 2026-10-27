@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "appliedmetalworks:block/pink_extended_foundry_interface",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "appliedmetalworks:block/pink_extended_foundry_interface",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "appliedmetalworks:block/pink_extended_foundry_interface",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "appliedmetalworks:block/pink_extended_foundry_interface",
+      "y": 270
+    }
+  }
+}

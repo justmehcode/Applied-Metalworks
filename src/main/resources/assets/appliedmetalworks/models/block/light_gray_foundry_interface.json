@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "appliedmetalworks:block/light_gray_foundry_interface_side",
+    "down": "appliedmetalworks:block/light_gray_foundry_interface_side",
+    "up": "appliedmetalworks:block/light_gray_foundry_interface_top",
+    "north": "appliedmetalworks:block/light_gray_foundry_interface_front",
+    "south": "appliedmetalworks:block/light_gray_foundry_interface_side",
+    "east": "appliedmetalworks:block/light_gray_foundry_interface_side",
+    "west": "appliedmetalworks:block/light_gray_foundry_interface_side"
+  }
+}

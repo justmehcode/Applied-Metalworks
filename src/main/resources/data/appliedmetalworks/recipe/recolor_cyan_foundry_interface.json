@@ -1,0 +1,15 @@
+{
+  "type": "appliedmetalworks:recolor",
+  "ingredients": [
+    {
+      "tag": "appliedmetalworks:foundry_interfaces"
+    },
+    {
+      "item": "productivemetalworks:cyan_fire_bricks"
+    }
+  ],
+  "result": {
+    "id": "appliedmetalworks:cyan_foundry_interface",
+    "count": 1
+  }
+}

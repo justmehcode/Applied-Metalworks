@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ENE",
+    "SHS",
+    "ENE"
+  ],
+  "key": {
+    "E": {
+      "tag": "appliedmetalworks:extended_foundry_interfaces"
+    },
+    "N": {
+      "item": "minecraft:netherite_block"
+    },
+    "H": {
+      "item": "productivemetalworks:high_powered_heating_coil"
+    },
+    "S": {
+      "item": "ae2:singularity"
+    }
+  },
+  "result": {
+    "id": "appliedmetalworks:foundry_automation_core",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "appliedmetalworks:block/light_gray_foundry_automation_core",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "appliedmetalworks:block/light_gray_foundry_automation_core",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "appliedmetalworks:block/light_gray_foundry_automation_core",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "appliedmetalworks:block/light_gray_foundry_automation_core",
+      "y": 270
+    }
+  }
+}

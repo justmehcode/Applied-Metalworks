@@ -1,0 +1,60 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.140'
+}
+
+version = '1.0.0'
+group = 'dev.mehdi.appliedmetalworks'
+base { archivesName = 'AppliedMetalworks' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+configurations {
+    pmwEmbedded { transitive = false }
+}
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://api.modrinth.com/maven' }
+    maven { url = 'https://modmaven.dev' }
+    maven {
+        url = 'https://www.cursemaven.com'
+        content { includeGroup 'curse.maven' }
+    }
+}
+
+neoForge {
+    version = '21.1.217'
+    runs {
+        client { client() }
+        server { server(); programArgument '--nogui' }
+        configureEach { gameDirectory = project.file('run') }
+    }
+    mods { appliedmetalworks { sourceSet sourceSets.main } }
+}
+
+// Resolve PMW's embedded API library for compilation; do not bundle it in this mod.
+tasks.register('extractProductiveLib', Sync) {
+    from { zipTree(configurations.pmwEmbedded.singleFile) }
+    include 'META-INF/jarjar/productivelib-*.jar'
+    eachFile { path = name }
+    includeEmptyDirs = false
+    into layout.buildDirectory.dir('embedded')
+}
+
+dependencies {
+    implementation 'org.appliedenergistics:appliedenergistics2:19.2.17'
+    implementation 'curse.maven:productive-metalworks-1184570:7331897'
+    pmwEmbedded 'curse.maven:productive-metalworks-1184570:7331897'
+    compileOnly files(fileTree(layout.buildDirectory.dir('embedded')) {
+        include '*.jar'
+    }).builtBy('extractProductiveLib')
+    compileOnly 'maven.modrinth:jade:eYz2YBGT'
+}
+
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+
+tasks.named('jar') {
+    from(files('LICENSE', 'LICENSE-GPL', 'NOTICE.md')) { into 'META-INF' }
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "appliedmetalworks:block/blue_foundry_interface_side",
+    "down": "appliedmetalworks:block/blue_foundry_interface_side",
+    "up": "appliedmetalworks:block/blue_foundry_interface_top",
+    "north": "appliedmetalworks:block/blue_foundry_interface_front",
+    "south": "appliedmetalworks:block/blue_foundry_interface_side",
+    "east": "appliedmetalworks:block/blue_foundry_interface_side",
+    "west": "appliedmetalworks:block/blue_foundry_interface_side"
+  }
+}

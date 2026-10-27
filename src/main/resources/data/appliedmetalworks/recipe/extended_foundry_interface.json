@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ICI",
+    "CFC",
+    "ICI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "ae2:capacity_card"
+    },
+    "F": {
+      "item": "appliedmetalworks:foundry_interface"
+    }
+  },
+  "result": {
+    "id": "appliedmetalworks:extended_foundry_interface",
+    "count": 1
+  }
+}

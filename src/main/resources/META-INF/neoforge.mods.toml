@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="LGPL-3.0-or-later"
+[[mods]]
+modId="appliedmetalworks"
+version="1.0.0"
+displayName="Applied Metalworks"
+logoFile="assets/appliedmetalworks/logo.png"
+authors="Mehdi"
+description='''AE2 foundry interfaces and a standalone endgame foundry core with melting, alloying and parallel table/basin casting.'''
+[[dependencies.appliedmetalworks]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.217,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.appliedmetalworks]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+[[dependencies.appliedmetalworks]]
+modId="ae2"
+type="required"
+versionRange="[19.2.17,)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.appliedmetalworks]]
+modId="productivemetalworks"
+type="required"
+versionRange="[1.21.1-1.14.0,)"
+ordering="AFTER"
+side="BOTH"

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "appliedmetalworks:block/gray_foundry_automation_core_side",
+    "down": "appliedmetalworks:block/gray_foundry_automation_core_side",
+    "up": "appliedmetalworks:block/gray_foundry_automation_core_top",
+    "north": "appliedmetalworks:block/gray_foundry_automation_core_front",
+    "south": "appliedmetalworks:block/gray_foundry_automation_core_side",
+    "east": "appliedmetalworks:block/gray_foundry_automation_core_side",
+    "west": "appliedmetalworks:block/gray_foundry_automation_core_side"
+  }
+}

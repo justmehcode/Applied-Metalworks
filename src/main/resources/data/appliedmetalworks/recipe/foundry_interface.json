@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ICI",
+    "TPB",
+    "IRI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "ae2:engineering_processor"
+    },
+    "T": {
+      "item": "productivemetalworks:casting_table"
+    },
+    "P": {
+      "item": "ae2:interface"
+    },
+    "B": {
+      "item": "productivemetalworks:casting_basin"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "appliedmetalworks:foundry_interface",
+    "count": 1
+  }
+}

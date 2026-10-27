@@ -1,0 +1,15 @@
+{
+  "type": "appliedmetalworks:recolor",
+  "ingredients": [
+    {
+      "tag": "appliedmetalworks:foundry_automation_cores"
+    },
+    {
+      "item": "productivemetalworks:gray_fire_bricks"
+    }
+  ],
+  "result": {
+    "id": "appliedmetalworks:gray_foundry_automation_core",
+    "count": 1
+  }
+}

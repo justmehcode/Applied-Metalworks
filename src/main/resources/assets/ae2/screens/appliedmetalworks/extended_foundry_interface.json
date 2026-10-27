@@ -1,0 +1,40 @@
+{
+  "includes": [
+    "../common/common.json",
+    "../common/player_inventory.json"
+  ],
+  "generatedBackground": {
+    "width": 176,
+    "height": 196
+  },
+  "slots": {
+    "appliedmetalworks_cast_storage": {
+      "left": 8,
+      "top": 28,
+      "grid": "BREAK_AFTER_9COLS"
+    }
+  },
+  "text": {
+    "dialog_title": {
+      "text": {
+        "translate": "gui.appliedmetalworks.extended_title"
+      },
+      "position": {
+        "left": 8,
+        "top": 6
+      }
+    }
+  },
+  "widgets": {
+    "recipeButton": {
+      "left": 154,
+      "top": 4,
+      "width": 16,
+      "height": 20
+    },
+    "upgrades": {
+      "right": 2,
+      "top": 0
+    }
+  }
+}
